@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Liri Node App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/css.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <h3>Portfolio Navigation</h3>
+            </div>
+            <!-- Sidebar Links -->
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <!-- Link with dropdown items -->
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Project 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 4</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 6</a>
+                        </li>
+                        <li>
+                            <a href="#">Project 7</a>
+                        </li>          
+
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle Sidebar
+            </button>
+            <div>
+                <h1>Welcome to my Liri Node App!</h1>
+                <h2>Unfortunately its all behind the scenes front end coming soon!</h2>
+                <h2>Navigation on the Left!</h2>
+
+            </div>
+        </div>
+            <!-- jQuery CDN -->
+            <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+            <!-- Bootstrap Js CDN -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#sidebarCollapse').on('click', function () {
+                        $('#sidebar').toggleClass('active');
+                    });
+                });
+            </script>
+</body>
